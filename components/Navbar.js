@@ -5,7 +5,7 @@ export default function Navbar() {
   const [user, setUser] = useState(null);
   return (
     <div className={styles.navcontainer}>
-      <h3>NFT Marketplace</h3>
+      <h3><b>NFT Marketplace</b></h3>
       <p>Menu 2</p>
       <div>
         { user ? (

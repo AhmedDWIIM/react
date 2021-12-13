@@ -1,6 +1,29 @@
 .navcontainer {
     display: flex;
+    vertical-align: middle;
+    text-align: center;
     align-items: center;
     justify-content: space-around;
     width: 100vw;
+    border-radius: 0.2px solid #eeeeee;
+    -webkit-box-shadow: 0px 2px 15px 5px #eeeeee; 
+    box-shadow: 0px 2px 15px 5px #eeeeee;
+  }
+
+.navcontainer p{
+    margin-top: inherit !important;
+   margin-bottom: inherit !important;
+}
+
+.navcontainer button {
+    height: 30px;
+    width: 60px;
+    cursor: pointer;
+    font-size: 16px;
+    color: black;
+    transition: all 0.3s;
+    text-align: center;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 2px 15px 5px #eeeeee; 
+    box-shadow: 0px 2px 15px 5px #eeeeee;
   }
