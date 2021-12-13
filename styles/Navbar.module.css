@@ -1,5 +1,4 @@
 .navcontainer {
-    color: white;
     border-radius: 0.2px solid #eeeeee;
     -webkit-box-shadow: 0px 2px 15px 5px #eeeeee; 
     box-shadow: 0px 2px 15px 5px #eeeeee;
@@ -13,5 +12,12 @@
 .navcontainer input{
     height: inherit !important;
     margin: 10px 0;
+    -webkit-box-shadow: 0px 2px 15px 5px #eeeeee; 
+    box-shadow: 0px 2px 15px 5px #eeeeee;
 }
+
+.navcontainer h3{
+    font-weight: bold;
+    text-align: center;
+  }
 

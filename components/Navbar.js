@@ -8,9 +8,9 @@ export default function Navbar() {
   const [user, setUser] = useState(null);
   return (
     <div className={styles.navcontainer}>
-      <nav className="navbar navbar-dark bg-dark">
+      <nav className="navbar navbar-light">
         <div className="container-fluid">
-          <a className="navbar-brand"><h3><b>NFT Marketplace</b></h3></a>
+         <h3> <a className="navbar-brand"><b>NFT Marketplace</b></a></h3>
           <form className="d-flex">
               <Image src={loupe} width="100%" height="100%" alt=''/><input className="form-control me-2" type="search" placeholder="Search items and collections" aria-label="Search"/>
               <button className="btn btn-outline-info" type="submit">Search</button>
