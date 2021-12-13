@@ -1,12 +1,27 @@
 import React, { useState } from 'react'
 
 export default function Count() {
-    const [count, setCount] = useState(0)
+    const [todolist, setTodolist] = useState([
+        "toto",
+        "café"
+    ])
+    const [push, setPush] = useState("")
+    
     return  (
         <div>
-            <p>Vous avez clique { count } fois</p> 
-            <br />
-            <button onClick={() => setCount (count+1)}> add 1</button>
+            <h1> To do :</h1>
+            <form>
+                <label>Ajouter une note</label>
+                <input value={push}   name="push" onChange={e => setPush(e.target.value)} />
+                <button onClick={() => {
+                    setTodolist
+                }}> add note</button>
+            </form>
+            { todolist.map((item, i) => {
+                return (
+                <p key={i}>{item}</p>
+                )
+            })}
         </div>
     )
 }
