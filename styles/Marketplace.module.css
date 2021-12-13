@@ -4,3 +4,9 @@
     justify-content: space-around;
     width: 100vw;
   }
+
+  .card{
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: antiquewhite;
+  }
