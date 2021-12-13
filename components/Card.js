@@ -9,7 +9,7 @@ export default function Card(props) {
         <Image width="100%" height="100%" src={props.img} alt=""/>
         <p>{props.desc}</p><br/>
         <h4>{props.price}</h4>
-        <button>Buy</button>
+        <button className="btn btn-primary" type="submit">Login</button>
     </div>
     );
 }
