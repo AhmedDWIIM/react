@@ -5,9 +5,10 @@ import bcrypt from "bcrypt";
 const handler = async (req, res) => {
     if (req.method === 'POST') {
         const { username, password } = req.body
+        if (await User.findOne({username})) return res.status(400).send("User already exists");
         if (username && password){
             try{
-                var passwordHash = await bcrypt.sign(password)
+                var passwordHash = await bcrypt.hash(password, 12)
                 var user = new User({
                     username,
                     password: passwordHash
