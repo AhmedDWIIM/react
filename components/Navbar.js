@@ -21,6 +21,12 @@ export default function Navbar() {
           ) : (
             <button className="btn btn-primary" type="submit">Login</button>
           )}
+            <div className="form-check">
+              <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+                <label className="form-check-label" htmlFor="flexCheckDefault">
+                Night mode
+                </label>
+            </div>
         </div>
         </div>
         
